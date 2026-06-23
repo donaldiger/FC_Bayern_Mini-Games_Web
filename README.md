@@ -1,0 +1,1 @@
+A Bayern Munich-themed website built by 2 first year students, featuring five mini-games (4-in-a-row, Higher/Lower price guessing, a memory game, a cookie clicker, and a quiz) plus a homepage slideshow and a game-suggestion submission form.
