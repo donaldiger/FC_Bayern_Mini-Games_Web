@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FC Bayern München Game Requests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../Homepage/HomePage.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-logo">
+      <img src="../pictures/bayernlogo.png" alt="Bayern Logo" />
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="../pictures/bayernlogo.png" alt="Bayern Logo" />
+      </div>
+      <nav class="nav-links">
+        <a href="../HomePage/HomePage.html">Home</a>
+        <a href="#request">Request Game</a>
+        <a href="#games">Current Games</a>
+      </nav>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1>Suggest New FC Bayern Games!</h1>
+        <p>Help us create the ultimate FC Bayern München gaming experience</p>
+        <a href="#request" class="cta-button">Request Game</a>
+      </div>
+    </section>
+
+    <!-- REQUEST FORM -->
+    <section id="request" class="request-section">
+      <div class="intro-card">
+        <h2>Request Your Game Idea</h2>
+        <p>Have an idea for a new FC Bayern München game? Let us know!</p>
+        
+        <form id="gameRequestForm" class="request-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="gameName">Game Name</label>
+            <input type="text" id="gameName" name="gameName" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="gameDescription">Game Description</label>
+            <textarea id="gameDescription" name="gameDescription" rows="5" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="gameType">Game Type</label>
+            <select id="gameType" name="gameType">
+              <option value="puzzle">Puzzle Game</option>
+              <option value="quiz">Quiz/Trivia</option>
+              <option value="action">Action Game</option>
+              <option value="strategy">Strategy Game</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="cta-button">Submit Request</button>
+        </form>
+        
+        <div id="formSuccess" class="form-success" style="display: none;">
+          <i class="fas fa-check-circle"></i>
+          <p>Thank you for your game request! We'll review it soon.</p>
+        </div>
+      </div>
+    </section>
+
+<section id="games" class="game-links">
+    <h2>Current FC Bayern Games</h2>
+    <div class="custom-game-grid">
+      <!-- Top Row - 3 Games -->
+      <div class="game-row top-row">
+        <a href="../Higher_or_Lower/HiLo.html" class="game-card">
+          <i class="fas fa-sort-amount-up-alt"></i>
+          <span>Higher or Lower</span>
+        </a>
+        <a href="../4_in_a_row/4inarow.html" class="game-card">
+          <i class="fas fa-th-large"></i>
+          <span>Connect Four</span>
+        </a>
+        <a href="../Quizz/quizz.html" class="game-card">
+          <i class="fas fa-question-circle"></i>
+          <span>Bayern Quiz</span>
+        </a>
+      </div>
+      
+      <!-- Bottom Row - 2 Games (centered) -->
+      <div class="game-row bottom-row">
+        <a href="../Bayern_Clicker/FCBClick.html" class="game-card">
+          <i class="fas fa-mouse-pointer"></i>
+          <span>Bayern Clicker</span>
+        </a>
+        <a href="../Memory/memo.html" class="game-card">
+          <i class="fas fa-brain"></i>
+          <span>Bayern Memory</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.facebook.com/fcbayern.en/"><i class="fab fa-facebook"></i></a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2FFCBayernEN&h=AT20te8mf265HXE0h_8YYIOH66qqwBc7Jp3SO5WwcwVNy8tkaf-rcJIUPlcrZM3Q1NNcwGzDADvd1RUZGMciUIGqXG5K1o3qcklAmZ0hfaLV71BH2oanPBxDpR7Gq_KbulhhTW6FFt9BFX8pM07J9qmAEQ"><i class="fab fa-twitter"></i></a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffcbayern&h=AT10aDhngyVZgWazF_400SbIEIL7LmZUGdj_5I4xkpsE-w4Yz8Q5fFx1J8oN12uU2-I1EJdYD5ZFwzgKT2uH4W6W1t4INqsk7-5VxRDGU_m3d-iib0bkB01hP7yv7enVH5E17UGuERfY0ylN0NWYZ8s0jA"><i class="fab fa-instagram"></i></a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2F%40fcbayern&h=AT0oIt2pc7rWjJEoOXkevjpacR2hMtxFXQxlCvrBX4kZCq3NNw3aikuH1tRiEZLmst2IfdxbjRePL-WiyTdO7_90mpuUaq4PVY5PePo_fnundqK97lt7zRpAHcsylqfaqM5RgWH08r7fvBrREpz16rgLUw"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>2025 FC Bayern München Mini Games.</p>
+      <p class="credits">CSE104 Final Project - Mathis Vernier & Gaspard Murugneux</p>
+    </div>
+  </footer>
+
+  <script src="../Homepage/HomePage.js"></script>
+  <script src="game-requests.js"></script>
+</body>
+</html>

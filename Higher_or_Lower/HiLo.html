@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayern Higher or Lower</title>
+  <link rel="stylesheet" href="HiLo.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="loader-logo">
+      <img src="../pictures/bayernlogo.png" alt="Bayern Logo">
+    </div>
+  </div>
+  
+  <header>
+    <a href="../HomePage/HomePage.html" class="back-button">← Back</a>
+    <h1>Bayern Players: Higher or Lower?</h1>
+  </header>
+
+  <main class="game-container">
+    <div id="score" class="score-display">Score: 0</div>
+    <div id="highScore" class="score-display">High Score: 0</div>
+    
+    <div class="card-container">
+      <div class="player-card" id="player1">
+        <img id="img1"  alt="Player 1">
+        <div class="player-info">
+          <h2 id="name1"></h2>
+          <p id="value1">???</p>
+        </div>
+      </div>
+      
+      <div class="vs">VS</div>
+      
+      <div class="player-card" id="player2">
+        <img id="img2"  alt="Player 2">
+        <div class="player-info">
+          <h2 id="name2"></h2>
+          <p id="value2">???</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="button-container">
+      <button id="higherBtn">Higher</button>
+      <button id="lowerBtn">Lower</button>
+      <button id="nextBtn" class="hidden">Next Round</button>
+    </div>
+    
+    <div class="result" id="result"></div>
+    
+    <div id="gameOver" class="hidden">
+      <h2>Game Over!</h2>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>All values are from Transfermarkt.de for the season 2024/2025</p>
+    <p>cse104 final project Mathis Vernier & Gaspard Murugneux</p>
+  </footer>
+
+  <script src="HiLo.js"></script>
+</body>
+</html>

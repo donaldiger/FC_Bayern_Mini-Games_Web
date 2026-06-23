@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayern vs 1860 - Four in a Row</title>
+  <link rel="stylesheet" href="4inarow.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-logo">
+          <img src="../pictures/bayernlogo.png" alt="Bayern Logo">
+        </div>
+      </div>
+  <header>
+    <a href="../HomePage/HomePage.html" class="back-button">← Back</a>
+    <h2>Bayern München vs 1860 München</h2>
+  </header>
+
+  <div id="roundModal" class="modal">
+    <div class="modal-content">
+      <h3>Select Number of Rounds</h3>
+      <div class="round-options">
+        <button onclick="startGame(1)">1 Round</button>
+        <button onclick="startGame(3)">3 Rounds</button>
+        <button onclick="startGame(5)">5 Rounds</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="game-container">
+    <div class="scoreboard">
+      <div class="team-score">
+        <div class="team-info">
+            <img src="../pictures/bayernlogo.png" alt="Bayern Logo" class="team-logo">
+        <span class="team-name">Bayern</span>
+        </div>
+        <span id="bayernScore">0</span>
+      </div>
+      <div class="vs">vs</div>
+      <div class="team-score">
+        <div class="team-info">
+            <img src="../pictures/1860logo.png" alt="1860 Logo" class="team-logo">
+        <span class="team-name">1860</span>
+        </div>
+        <span id="tsvScore">0</span>
+      </div>
+    </div>
+    <div id="gameBoard"></div>
+    <p id="message"></p>
+    <button onclick="resetGame()">Restart Game</button>
+  </main>
+
+  <footer>
+    <p>cse104 final project Mathis Vernier & Gaspard Murugneux</p>
+  </footer>
+
+  <script src="4inarow.js"></script>
+</body>
+</html>

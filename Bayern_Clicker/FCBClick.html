@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Bayern Clicker</title>
+    <link rel="stylesheet" href="FCBClick.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-logo">
+          <img src="../pictures/bayernlogo.png" alt="Bayern Logo">
+        </div>
+      </div>
+    <header>
+        <a href="../HomePage/HomePage.html" class="back-button">← Back</a>
+        <h1>FC Bayern Clicker</h1>
+    </header>
+
+    <main class="game-container">
+        <h1>Score Goals for Bayern!</h1>
+        <img src="../pictures/bayern_pic.jpeg" 
+             alt="FC Bayern Logo" class="logo" onclick="increaseScore()">
+        <div class="counter">Goals: <span id="score">0</span></div>
+        
+        <div class="shop">
+            <div class="power-up">
+                <h3>Auto Clicker</h3>
+                <p>1 goal per second</p>
+                <button class="button" onclick="buyUpgrade1()" id="price1">Buy (Cost: 10)</button>
+            </div>
+            <div class="power-up">
+                <h3>"Der Bomber"</h3>
+                <p>6 goals per second</p>
+                <button class="button" onclick="buyUpgrade2()" id="price2">Buy (Cost: 55)</button>
+            </div>
+            <div class="power-up">
+                <h3>"Der Kaiser"</h3>
+                <p>40 goals per second</p>
+                <button class="button" onclick="buyUpgrade3()" id="price3">Buy (Cost: 730)</button>
+            </div>
+            <div class="power-up">
+                <h3>"Mia San Mia"</h3>
+                <p>515 goals per second</p>
+                <button class="button" onclick="buyUpgrade4()" id="price4">Buy (Cost: 9200)</button>
+            </div>
+            <div class="power-up">
+                <h3>"Treble Winners"</h3>
+                <p>10000 goals per second</p>
+                <button class="button" onclick="buyUpgrade5()" id="price5">Buy (Cost: 1000000)</button>
+            </div>
+            <div class="power-up">
+                <h3>"Legendary Squad"</h3>
+                <p>100000 goals per second</p>
+                <button class="button" onclick="buyUpgrade6()" id="price6">Buy (Cost: 50000000)</button>
+            </div>
+        </div>
+        
+       
+        
+        
+        <div class="prestige">
+            <div class="multiplier-display" id="mult">Prestige Multiplier: 1×</div>
+            <div class="prestige-option">
+                <h3>Prestige Reset</h3>
+                <p>Gain a 5% multiplier (resets progress)</p>
+                <button class="button" onclick="prestigeReset()" id="pricePres">Buy (Cost: 1000)</button>
+            </div>
+            <div class="multiplier-display" id="cMult">Click Multiplier: 1×</div>
+            <div class="prestige-option">
+                <h3>Click Multiplier</h3>
+                <p>Double your click power</p>
+                <button class="button" onclick="cMultiplier()" id="Cprice">Buy (Cost: 1500)</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>cse104 final project Mathis Vernier & Gaspard Murugneux</p>
+    </footer>
+
+    <script src="FCBClick.js"></script>
+</body>
+</html>

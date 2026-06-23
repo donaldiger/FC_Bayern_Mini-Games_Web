@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayern Higher or Lower</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="HomePage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loader">
+    <div class="loader-logo">
+      <img src="../pictures/bayernlogo.png" alt="Bayern Logo">
+    </div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="../pictures/bayernlogo.png" alt="Bayern Logo">
+      </div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#arena">Arena</a>
+        <a href="#games">Games</a>
+      </nav>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1>Welcome to FC Bayern München Mini Games!</h1>
+        <p>Experience the passion of Germany's most successful football club</p>
+        <a href="#games" class="cta-button">Explore Games</a>
+      </div>
+    </section>
+
+    <section id="about" class="intro-section">
+      <div class="intro-card">
+        <h2>Introducing FC Bayern München</h2>
+        <p>
+          FC Bayern München, commonly known as Bayern Munich, is Germany's most decorated and internationally renowned football club.
+          Founded on February 27, 1900, by eleven football enthusiasts led by Franz John, Bayern has grown from a local team into one of the most dominant forces in world football.
+        </p>
+        <p>
+          Based in Munich, Bavaria, the club holds the record for the most Bundesliga titles and numerous DFB-Pokal victories. On the European stage, they have claimed the prestigious UEFA Champions League trophy multiple times.
+        </p>
+        <p>
+          The team plays at the Allianz Arena, a glowing red fortress on matchdays that holds over 75,000 fans. Known for their attacking style and powerhouse mentality, Bayern has been home to legends like Franz Beckenbauer, Gerd Müller, Thomas Müller and Manuel Neuer.
+        </p>
+        <p>
+          Beyond trophies, FC Bayern stands for tradition, fan loyalty, and community. Their motto, <strong>"Mia san mia"</strong>, embodies unity, pride, and confidence.
+        </p>
+        <p>
+          Whether you're a lifelong supporter or just discovering the club, one thing is certain: FC Bayern München is not just a team—it's a legacy.
+        </p>
+      </div>
+      <div class="slideshow-container">
+        <div class="slide active" style="background-image: url('../pictures/team1.jxl');"></div>
+        <div class="slide" style="background-image: url('../pictures/trophy.jpg');"></div>
+        <div class="slide" style="background-image: url('../pictures/player1.jpg');"></div>
+        <div class="slide" style="background-image: url('../pictures/fans.jpg');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic1.jpg');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic2.jxl');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic3.jxl');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic4.webp');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic5.jpg');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic6.jpeg');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic7.jpg');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic8.avif');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic9.jpg');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic10.jxl');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic11.jxl');"></div>
+        <div class="slide" style="background-image: url('../pictures/pic12.jpg');"></div>
+        <button class="slideshow-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slideshow-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        <div class="slideshow-dots"></div>
+      </div>
+    </section>
+
+    <section id="arena" class="arena-section">
+      <div class="section-header">
+        <h2>Allianz Arena</h2>
+        <p>The home of FC Bayern München</p>
+      </div>
+      <img src="../pictures/Allianz.jxl" alt="Allianz Arena" class="arena-image">
+      <div class="arena-info">
+        <p>The Allianz Arena is one of the most modern and spectacular stadiums in the world. With its unique illuminated exterior, it's become an architectural icon of Munich.</p>
+      </div>
+    </section>
+
+    <section id="games" class="game-links">
+      <h2>Explore Our Games</h2>
+      <div class="custom-game-grid">
+        <!-- Top Row - 3 Games -->
+        <div class="game-row top-row">
+          <a href="../Higher_or_Lower/HiLo.html" class="game-card">
+            <i class="fas fa-sort-amount-up-alt"></i>
+            <span>Higher or Lower</span>
+          </a>
+          <a href="../4_in_a_row/4inarow.html" class="game-card">
+            <i class="fas fa-th-large"></i>
+            <span>Connect Four</span>
+          </a>
+          <a href="../Quizz/quizz.html" class="game-card">
+            <i class="fas fa-question-circle"></i>
+            <span>Bayern Quiz</span>
+          </a>
+        </div>
+        
+        <!-- Bottom Row - 2 Games -->
+        <div class="game-row bottom-row">
+          <a href="../Bayern_Clicker/FCBClick.html" class="game-card">
+            <i class="fas fa-mouse-pointer"></i>
+            <span>Bayern Clicker</span>
+          </a>
+          <a href="../Memory/memo.html" class="game-card">
+            <i class="fas fa-brain"></i>
+            <span>Bayern Memory</span>
+          </a>
+        </div>
+      </div>
+      <div class="game-row request-row">
+        <a href="../request_game/game-requests.html" class="game-card request-card">
+          <i class="fas fa-lightbulb"></i>
+          <span>Request a New Game</span>
+        </a>
+      </div>
+    </section>
+
+    <button id="showStadiumBtn" class="cta-button">Show Stadium</button>
+<p id="stadiumMessage" class="stadium-message">
+  Click the dots for more Bayern Experience
+</p>
+<section class="stadium-section" id="stadiumSection">
+  <img
+    id="stadiumImage"
+    class="stadium"
+    src="https://img.fcbayern.com/image/upload/v1601458426/cms/public/images/allianz-arena/stadion-innenraum/aa_haupttribuene.jpg"
+    alt="Stadium interior"
+  />
+  <a href="https://allianz-arena.com/en" class="dot dot1" data-label="Bayern's Home"></a>
+  <a href="https://fcbayern.com/museum/en/tickets/arena-tours" class="dot dot2" data-label="Tickets"></a>
+  <a href="https://fcbayern.com/360/allianzarena/" class="dot dot3" data-label="Virtual Tour"></a>
+  <a href="https://fcbayern.com/en/teams/first-team" class="dot dot4" data-label="Players"></a>
+  <a href="https://fcbayern.com/en/match-center/matchplan" class="dot dot5" data-label="Match"></a>
+</section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://www.facebook.com/fcbayern.en/"><i class="fab fa-facebook"></i></a>
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2FFCBayernEN&h=AT20te8mf265HXE0h_8YYIOH66qqwBc7Jp3SO5WwcwVNy8tkaf-rcJIUPlcrZM3Q1NNcwGzDADvd1RUZGMciUIGqXG5K1o3qcklAmZ0hfaLV71BH2oanPBxDpR7Gq_KbulhhTW6FFt9BFX8pM07J9qmAEQ"><i class="fab fa-twitter"></i></a>
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffcbayern&h=AT10aDhngyVZgWazF_400SbIEIL7LmZUGdj_5I4xkpsE-w4Yz8Q5fFx1J8oN12uU2-I1EJdYD5ZFwzgKT2uH4W6W1t4INqsk7-5VxRDGU_m3d-iib0bkB01hP7yv7enVH5E17UGuERfY0ylN0NWYZ8s0jA"><i class="fab fa-instagram"></i></a>
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2F%40fcbayern&h=AT0oIt2pc7rWjJEoOXkevjpacR2hMtxFXQxlCvrBX4kZCq3NNw3aikuH1tRiEZLmst2IfdxbjRePL-WiyTdO7_90mpuUaq4PVY5PePo_fnundqK97lt7zRpAHcsylqfaqM5RgWH08r7fvBrREpz16rgLUw"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>2025 FC Bayern München Mini Games.</p>
+        <p class="credits">CSE104 Final Project - Mathis Vernier & Gaspard Murugneux</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="HomePage.js"></script>
+</body>
+</html>

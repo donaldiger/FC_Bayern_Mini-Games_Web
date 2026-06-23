@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayern Munich Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-logo">
+          <img src="../pictures/bayernlogo.png" alt="Bayern Logo">
+        </div>
+      </div>
+    <header>
+        <div class="header-content">
+            <a href="../HomePage/HomePage.html" class="back-button">← Back</a>
+            <h2>Bayern Munich Quiz</h2>
+        </div>
+    </header>
+
+    <main class="game-container">
+        <h1>Test Your Bayern Knowledge</h1>
+        <div id="score-container">
+            Score: <span id="score-display">0</span> / <span>20</span>
+        </div>
+        <div id="question-container" class="question-container">
+            <p id="question-text">Question will appear here</p>
+            <div id="answers-container" class="answers-container">
+                <!-- Answer buttons will be added here by JavaScript -->
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="next-question-btn" class="next-btn">Next Question</button>
+            <button id="restart-btn" class="restart-btn" style="display: none;">Restart Quiz</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>cse104 final project Mathis Vernier & Gaspard Murugneux</p>
+        <p>As of April 2025</p>
+    </footer>
+
+    <script src="quizz.js"></script>
+</body>
+</html>
